@@ -1,3 +1,4 @@
+import React from 'heatug/src/macros/core/root/macro';
 import { ThemeProvider as Theming } from '@mui/material/styles';
 
 import theme from 'themes/default';
