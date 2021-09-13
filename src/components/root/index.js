@@ -1,4 +1,12 @@
-import * as statics from './statics';
-import render from './render';
+import React from 'heatug/src/macros/core/root/macro';
+import { ThemeProvider as Theming } from '@mui/material/styles';
 
-export default Object.assign(render, statics);
+import theme from 'themes/default';
+import { App, Style } from 'components';
+
+export default () => (
+  <Theming theme={theme}>
+    <Style />
+    <App />
+  </Theming>
+);
