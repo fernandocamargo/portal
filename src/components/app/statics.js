@@ -1,5 +1,12 @@
-export const defaultProps = {};
+import { string } from 'prop-types';
+
+export const defaultProps = {
+  foo: 'bar',
+};
 
 export const displayName = 'App';
 
-export const propTypes = {};
+export const propTypes = {
+  className: string.isRequired,
+  foo: string,
+};

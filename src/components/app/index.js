@@ -1,4 +1,5 @@
-import * as statics from './statics';
-import render from './render';
-
-export default Object.assign(render, statics);
+export default ({ className, foo }) => (
+  <p className={className}>
+    Welcome to the new era <strong>(foo: {foo})</strong>
+  </p>
+);
