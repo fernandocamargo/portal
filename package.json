@@ -1,6 +1,9 @@
 {
   "name": "portal",
   "version": "0.1.0",
+  "main": "./src/index.js",
+  "repository": "git@github.com:fernandocamargo/portal.git",
+  "author": "Fernando Camargo <camargodelbuono@gmail.com>",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",

@@ -9,7 +9,7 @@ import { App, Style } from 'components';
 
 export const increase = (value) => value + 1;
 
-export default () => {
+export default ({ pckg: { name, version } }) => {
   const [counter, setCounter] = useState(1);
   const onClick = useCallback(() => setCounter(increase), []);
 
@@ -23,6 +23,7 @@ export default () => {
         <p>Counter: {counter}</p>
         <button onClick={onClick}>Increase</button>
       </div>
+      <pre>{JSON.stringify({ name, version }, null, 2)}</pre>
     </>
   );
 };
